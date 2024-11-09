@@ -23,8 +23,8 @@ const LoginForm = () => {
 
       if (response.status === 200) {
         localStorage.setItem("isLoggedIn", "true");
-        navigate("/"); // Başarılı giriş sonrası yönlendirme
-        window.location.reload(); // Sayfayı tamamen yeniden yükle
+        navigate("/"); 
+        window.location.reload(); 
       } else {
         setError(
           "Giriş başarısız. Lütfen kullanıcı adı ve şifrenizi kontrol edin."
